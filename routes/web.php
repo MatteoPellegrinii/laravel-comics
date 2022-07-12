@@ -19,8 +19,8 @@ Route::get('/', function () {
     ]);
 })->name('homepage');
 
-Route::get('/', function () {
-    return view('partials/header', [
-        'arrLink'  => config('links'),
-    ]);
-})->name('header');
+// Route::get('/', function () {
+//     return view('partials/header', [
+//         'arrLink'  => config('links'),
+//     ]);
+// })->name('header');

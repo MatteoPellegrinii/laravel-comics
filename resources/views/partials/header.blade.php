@@ -1,3 +1,6 @@
+<?php
+$arrLink  = config('links')
+?>
 <header>
     <div class="whiteHeader">
         <div class="logo">
