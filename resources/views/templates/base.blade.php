@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('pageTitle')</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}} ">
+    <link rel="stylesheet" href="{{asset('css/app.scss')}} ">
+    <link rel="stylesheet" href="{{asset('css/header.scss')}} ">
 </head>
 <body>
     @include('partials.header')
 
-    @yield('pageMain')
+    @yield('mainPage')
 
     @include('partials.footer')
 </body>

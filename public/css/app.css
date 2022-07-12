@@ -12149,7 +12149,56 @@ fieldset:disabled .btn {
   }
 }
 
-body {
-  background-color: rgb(207, 25, 25);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.whiteHeader {
+  display: flex;
+}
+
+.whiteHeader ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.whiteHeader ul li {
+  list-style: none;
+}
+
+.whiteHeader ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.whiteHeader ul li a:hover {
+  color: blue;
+}
+
+.navbar {
+  width: 60%;
+  height: 100px;
+  font-size: 11px;
+}
+
+.navbar .here {
+  border-bottom: solid 2px blue;
+  color: blue;
+}
+
+.logo {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 90%;
 }
 

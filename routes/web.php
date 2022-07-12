@@ -18,3 +18,9 @@ Route::get('/', function () {
         'arrLibri'  => config('comics'),
     ]);
 })->name('homepage');
+
+Route::get('/', function () {
+    return view('partials/header', [
+        'arrLink'  => config('links'),
+    ]);
+})->name('header');
