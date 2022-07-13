@@ -16,10 +16,12 @@ $arrObject  = config('objects')
                 <div class="slides">
                     @foreach ($arrLibri as $comics)
                     <div class="slide">
-                        <img src="{{$comics['thumb']}} ">
-                        <h5>{{$comics['series']}} </h5>
-                        <h6 class="hoveronly">{{$comics['price']}} </h6>
-                        </div> 
+                        <a href="{{route('prodotti', ['id' => $comics['id']])}}">
+                            <img src="{{$comics['thumb']}} ">
+                            <h5>{{$comics['series']}} </h5>
+                            <h6 class="hoveronly">{{$comics['price']}} </h6>
+                        </a>
+                    </div> 
                     @endforeach
                 </div>
             <div class="bottone">

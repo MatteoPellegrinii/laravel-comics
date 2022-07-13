@@ -19,8 +19,10 @@ Route::get('/', function () {
     ]);
 })->name('homepage');
 
-// Route::get('/', function () {
-//     return view('partials/header', [
-//         'arrLink'  => config('links'),
-//     ]);
-// })->name('header');
+Route::get('/prodotti{id} ', function ($id) {
+    return view('prodotti', [
+        'pageTitle' => 'prodotti',
+        'arrLibri'  => config('comics'),
+    ]);
+})->name('prodotti');
+
