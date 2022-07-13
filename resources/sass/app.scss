@@ -2,6 +2,7 @@
 
 @import "~bootstrap/scss/bootstrap";
 @import 'header';
+@import 'footer';
 
 *{
     margin: 0;
@@ -65,6 +66,7 @@
     }
 }
 .jumbo{
+    background-image: url(/images/jumbotron.jpg);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -84,3 +86,34 @@
         padding: 10px 30px;
     }
 }
+.slides{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    .slide{
+    width: 14%;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+        h5, h6{
+            color: rgba(255, 255, 255, 0.61);
+        }
+        img{
+        width: 80%;
+
+        }
+        .hoveronly{
+            display: none;
+        }
+        &:hover{
+            .hoveronly {
+                display: block;
+            }
+        }
+}
+}
+

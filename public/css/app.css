@@ -12203,6 +12203,72 @@ fieldset:disabled .btn {
   height: 90%;
 }
 
+.container2 {
+  background-image: url(/images/footer-bg.jpg);
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.list {
+  width: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  height: 100%;
+}
+
+.list li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 10px;
+}
+
+.list li a:hover {
+  color: blue;
+}
+
+.logo2 {
+  width: 60%;
+  background-image: url(/images/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: opacity(0.5);
+}
+
+.lastfoot {
+  width: 100%;
+  background-color: #303030;
+  height: 90px;
+}
+
+.secondtitle {
+  margin-top: 10px;
+}
+
+.bottonefoot {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottonefoot a {
+  text-decoration: none;
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12273,6 +12339,7 @@ fieldset:disabled .btn {
 }
 
 .jumbo {
+  background-image: url(/images/jumbotron.jpg);
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -12292,5 +12359,41 @@ fieldset:disabled .btn {
   background-color: #0282f9;
   color: white;
   padding: 10px 30px;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.slides .slide {
+  width: 14%;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.slides .slide h5,
+.slides .slide .h5,
+.slides .slide h6,
+.slides .slide .h6 {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.slides .slide img {
+  width: 80%;
+}
+
+.slides .slide .hoveronly {
+  display: none;
+}
+
+.slides .slide:hover .hoveronly {
+  display: block;
 }
 
