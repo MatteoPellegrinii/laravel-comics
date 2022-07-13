@@ -12336,11 +12336,7 @@ fieldset:disabled .btn {
 
 .specs {
   width: 50%;
-}
-
-.specs h5,
-.specs .h5 {
-  text-align: center;
+  padding-left: 40px;
 }
 
 * {
