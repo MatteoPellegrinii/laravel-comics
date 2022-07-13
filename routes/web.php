@@ -20,9 +20,22 @@ Route::get('/', function () {
 })->name('homepage');
 
 Route::get('/prodotti{id} ', function ($id) {
-    return view('prodotti', [
-        'pageTitle' => 'prodotti',
-        'arrLibri'  => config('comics'),
-    ]);
+    $comics = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id) {
+            $comics = $value;
+            break;
+        }
+    }
+
+    if ($comics) {
+        return view('prodotti', [
+            'pageTitle' => 'prodotti',
+            'comics'     => $comics,
+        ]);
+    } else {
+        abort(404);
+    }
+
 })->name('prodotti');
 
